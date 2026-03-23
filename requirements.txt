@@ -1,7 +1,7 @@
 torch
 torchaudio
 transformers
-gradio==4.44.0
+gradio
 librosa
 numpy
 soundfile

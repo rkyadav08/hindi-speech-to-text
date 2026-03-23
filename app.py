@@ -141,7 +141,7 @@ CUSTOM_CSS = """
 footer { display: none !important; }
 """
  
-with gr.Blocks(css=CUSTOM_CSS) as demo:
+with gr.Blocks() as demo:
  
     gr.HTML("""
         <div class="main-title">🎙️ Hindi Speech-to-Text</div>
@@ -235,5 +235,5 @@ with gr.Blocks(css=CUSTOM_CSS) as demo:
  
 # Launch
 if __name__ == "__main__":
-    demo.launch(title="Hindi Speech-to-Text")
+    demo.launch()
  

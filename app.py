@@ -141,7 +141,7 @@ CUSTOM_CSS = """
 footer { display: none !important; }
 """
  
-with gr.Blocks(css=CUSTOM_CSS, title="Hindi Speech-to-Text") as demo:
+with gr.Blocks(css=CUSTOM_CSS) as demo:
  
     gr.HTML("""
         <div class="main-title">🎙️ Hindi Speech-to-Text</div>
@@ -172,7 +172,6 @@ with gr.Blocks(css=CUSTOM_CSS, title="Hindi Speech-to-Text") as demo:
                         label="Transcription",
                         placeholder="Hindi transcription will appear here...",
                         lines=8,
-                        show_copy_button=True,
                         elem_classes=["transcription-box"]
                     )
  
@@ -209,7 +208,6 @@ with gr.Blocks(css=CUSTOM_CSS, title="Hindi Speech-to-Text") as demo:
                 label="📄 Full Document (copy this into Word)",
                 placeholder="Start dictating — your text will accumulate here...",
                 lines=12,
-                show_copy_button=True,
                 elem_classes=["transcription-box"]
             )
  
@@ -237,5 +235,5 @@ with gr.Blocks(css=CUSTOM_CSS, title="Hindi Speech-to-Text") as demo:
  
 # Launch
 if __name__ == "__main__":
-    demo.launch()
+    demo.launch(title="Hindi Speech-to-Text")
  

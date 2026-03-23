@@ -62,7 +62,8 @@ def transcribe_audio(audio_input):
         chunk_length = 30 * 16000  # 30 seconds
         chunks = [audio_data[i:i + chunk_length] for i in range(0, len(audio_data), chunk_length)]
  
-        full_transcription = []"""
+        full_transcription = []
+"""
 Hindi Speech-to-Text — Gradio App for HuggingFace Spaces
 Compatible with Gradio 6.x
 """
